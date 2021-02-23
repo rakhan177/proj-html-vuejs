@@ -1,0 +1,409 @@
+// sezione 3 riga 166
+@import "variabili";
+@import "mixin";
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+.pointer:hover{
+  cursor: pointer;
+}
+.container{
+  width: 100%;
+  background-color: black;
+  .header{
+    .nav{
+      width: 100%;
+      height: 80px;
+      background-color: $col-10;
+      padding-left: 8%;
+      padding-right: 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &-left{
+        @include flexCenter;
+        & > div{
+          padding-right: 20px;
+        }
+      }
+      &-center{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-size: $big-size;
+        span{
+          font-weight: bold;
+          font-size: $big-size;
+        }
+      }
+      &-right{
+        @include flexCenter;
+        & > *{
+          margin-left: 20px;
+        }
+        &-input{
+          @include flexCenter;
+          background-color: $col-12;
+          padding: 10px;
+          border-radius: 5px;
+          input{
+            background-color: $col-12;
+            border: none;
+            outline: none;
+          }
+        }
+      }
+    }
+    &-bottom{
+      @include flexColumnCenter;
+      width: 100%;
+      height: 600px;
+      background-image: url("../traccia/images/home-3-hero-bg.jpg");
+      background-size: cover;
+      color: #fff;
+      div:first-child{
+        font-weight: bold;
+        font-size: 22px;
+        padding-bottom: 5px;
+      }
+      h1{
+        font-size: 45px;
+        padding-bottom: 20px;
+      }
+      div:last-child{
+        padding: 15px 40px;
+        background-color: #fff;
+        color: $col-5;
+        border-radius: 5px;
+      }
+      div:last-child:hover{
+        background-color: $col-5;
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+  }
+  main{
+    .sezione1{
+      @include Struttura1-1;
+      padding-top: 120px;
+      padding-bottom: 80px;
+      background-color: $col-10;
+      &-1{
+        @include sezioneTesto;
+        & > div:last-of-type{
+          color: $col-2;
+          span{
+            color: $col-5;
+            font-weight: bold;
+          }
+        }
+      }
+      &-2{
+        padding-left: 18%;
+        position: relative;
+        img{
+          width: 100%;
+        }
+        .img-absolute1{
+          position: absolute;
+          width: 120px;
+          right: -40px;
+          top: -60px;
+          z-index: 10;
+        }
+        .img-absolute2{
+          position: absolute;
+          width: 120px;
+          right: 0px;
+          top: -55px;
+        }
+        .img-absolute3{
+          width: 80px;
+          position: absolute;
+          bottom: -50px;
+          right: 50px;
+        }
+        .img-absolute4{
+          position: absolute;
+          top: -20px;
+          left: 20px;
+          font-size: 80px;
+          color: $col-6;
+        }
+      }
+    }
+    .sezione2{
+      @include flexCenter;
+      width: 100%;
+      background-color: $col-10;
+      &-box{
+        @include flexColumnCenter;
+        padding: 20px 1%;
+        & > div:first-child{
+          color: $col-5;
+          font-weight: bold;
+          font-size: 40px;
+          padding-bottom: 15px;
+        }
+        & > div:last-child{
+          color: $col-2;
+          font-weight: bold;
+        }
+      }
+    }
+    .sezione3{
+      @include Struttura1-2;
+      padding-top: 80px;
+      padding-bottom: 120px;
+      background-color: $col-10;
+      position: relative;
+
+      &-1{
+        div{
+          width: 550px;
+          position: absolute;
+          top: 60px;
+          .img-1{
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+          }
+          .img-2{
+            position: absolute;
+            top: 150px;
+            left: 230px;
+            z-index: 11;
+          }
+          .img-3{
+            width: 120px;
+            position: absolute;
+            top: 20px;
+            left: -80px;
+            z-index: 3;
+          }
+          .img-4{
+            width: 150px;
+            position: absolute;
+            right: -20px;
+            bottom: -440px;
+          }
+        }
+      }
+      &-2{
+        @include sezioneTesto;
+        div:last-of-type{
+          font-weight: bold;
+        }
+      }
+    }
+    .sezione4{
+      @include padding;
+      width: 100%;
+      background-color: $col-10;
+      &-top{
+        @include flexColumnCenter;
+        @include intestazione;
+        width: 100%;
+      }
+      &-middle{
+        @include struttura2;
+        &-scheda{
+          &-text{
+            @include strutturaScheda;
+            background-color: #fff;
+            & > div:first-of-type{
+              color: $col-5;
+              font-size: $big-size;
+              font-weight: bold;
+              padding: 7px 15px 5px 10px;
+            }
+          }
+        }
+      }
+      &-bottom{
+        @include flexColumnCenter;
+        width: 100%;
+        &-pallini{
+          display: flex;
+          padding-top: 15px;
+          i{
+            padding: 0 10px;
+            font-size: $small-size;
+          }
+        }
+        & > div:last-child{
+          text-align: center;
+          padding-top: 35px;
+          padding-bottom: 70px;
+          color: $col-2;
+          span{
+            color: black;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .sezione5{
+      @include Struttura1-1;
+      background-color: #fff;
+      padding-top: 80px;
+      padding-bottom: 120px;
+      &-1{
+        @include sezioneTesto;
+        & > div:last-of-type{
+          font-weight: bold;
+        }
+      }
+      &-2{
+        padding-left: 10%;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .sezione6{
+      @include Struttura1-2;
+      padding-top: 80px;
+      padding-bottom: 120px;
+      background-color: #fff;
+      &-1{
+        img{
+          width: 85%;
+        }
+      }
+      &-2{
+        @include sezioneTesto;
+        & > div:last-child{
+          background-color: $col-5;
+          padding: 10px 30px;
+          display: inline-block;
+          color: #fff;
+          border-radius: 5px;
+        }
+        & > div:last-child:hover{
+          opacity: 0.7;
+          font-weight: bold;
+        }
+      }
+    }
+    .sezione7{
+      @include padding;
+      width: 100%;
+      background-color: $col-10;
+      &-top{
+        @include flexColumnCenter;
+        @include intestazione;
+        width: 100%;
+      }
+      &-bottom{
+        @include struttura2;
+        padding-bottom: 50px;
+        &-scheda{
+          &-text{
+            @include strutturaScheda;
+              div:first-of-type{
+              color: $col-2;
+              padding: 7px 0 5px 10px;
+              font-size: $small-size;
+            }
+          }
+
+        }
+      }
+    }
+    .sezione8{
+      @include padding;
+      @include flexColumnCenter;
+      width: 100%;
+      padding-top: 80px;
+      padding-bottom: 120px;
+      background-color: #fff;
+      & > div:first-child{
+        font-size: $h2-size;
+        font-weight: bold;
+        padding-bottom: 30px;
+        span{
+          font-size: $h2-size;
+          color: $col-5;
+        }
+      }
+      p{
+        text-align: center;
+        color: $col-2;
+        padding-bottom: 30px;
+      }
+      &-form{
+        @include flexCenter;
+        input{
+          padding: 10px;
+        }
+        div{
+          margin-left: 5px;
+          padding: 10px 20px;
+          background-color: $col-5;
+          color: #fff;
+          border-bottom-right-radius: 5px;
+          border-top-right-radius: 5px;
+        }
+        div:hover{
+          font-weight: bold;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  .footer{
+    @include padding;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: $col-9;
+    color: #fff;
+    color: $col-2;
+    .pointer:hover{
+      color: #fff;
+    }
+    .icone{
+      display: flex;
+      *{
+        padding-right: 15px;
+      }
+    }
+    &-title{
+      font-size: $big-size;
+      color: #fff;
+      padding-bottom: 15px;
+    }
+    &-left{
+      *{
+        padding-top:10px;
+      }
+    }
+    &-center-left{
+      padding-left: 200px;
+      *{
+        padding-top:10px;
+      }
+    }
+    &-center-right{
+      padding-top: 31px;
+      *{
+        padding-top:10px;
+      }
+    }
+    &-right{
+      *{
+        padding-top:10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+@mixin padding{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+// flex
+@mixin flexColumnCenter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// / flex
+
+// strutture
+@mixin struttura1{
+  @include padding;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@mixin Struttura1-1{
+  @include struttura1;
+  & > div:first-of-type{
+    width: 38%;
+  }
+  & > div:nth-of-type(2){
+    width: 62%;
+  }
+}
+@mixin Struttura1-2{
+  @include struttura1;
+  & > div:first-of-type{
+    width: 62%;
+    background-color: #fff;
+  }
+  & > div:nth-of-type(2){
+    width: 38%;
+  }
+}
+@mixin struttura2{
+  @include flexCenter;
+  width: 100%;
+  & > div{
+    width: 33.3333%;
+    height: 100%;
+    img{
+      width: 100%;
+    }
+  }
+  & > div:first-of-type{
+    padding-right: 10px;
+  }
+  & > div:nth-of-type(2){
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  & > div:nth-of-type(3){
+    padding-left: 10px;
+  }
+}
+@mixin sezioneTesto{
+  & > div:first-child{
+    color: $col-2;
+    font-size: $small-size;
+    padding-bottom: 30px;
+  }
+  & > div:nth-of-type(2){
+    padding-bottom: 30px;
+    font-size: $h2-size;
+    font-weight: bold;
+    span{
+      color: $col-5;
+    }
+  }
+  & > p{
+    color: $col-2;
+    padding-bottom: 30px;
+  }
+}
+@mixin intestazione{
+  padding: 60px 0;
+  & > div:first-child{
+    color: $col-2;
+    padding-bottom: 10px;
+  }
+  & > div:last-child{
+    font-size: $h2-size;
+    font-weight: bold;
+    span{
+      font-size: $h2-size;
+      color: $col-5;
+    }
+  }
+}
+@mixin strutturaScheda{
+  & > div:nth-of-type(2){
+    min-height: 60px;
+    font-weight: bold;
+    padding: 0 15px 10px 10px;
+  }
+  & > div:nth-of-type(3){
+    display: flex;
+    align-items: center;
+    padding: 0 15px 20px 10px;
+    color: $col-2;
+
+    & > div:first-child{
+      padding-right: 20px;
+      i, span{
+        font-size: $small-size;
+      }
+    }
+    & > div:last-child{
+      i, span{
+        font-size: $small-size;
+      }
+    }
+  }
+}
+
+// / strutture

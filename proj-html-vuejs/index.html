@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/app.css">
+  </head>
+  <body>
+    <div class="container" id="root">
+      <header class="header">
+        <nav class="nav">
+          <div class="nav-left">
+            <div class="pointer" v-for="dati in navbarLeft">{{dati.title}} <i :class="dati.icon"></i></div>
+          </div>
+          <div class="nav-center">
+            <span>Max</span>Coach
+          </div>
+          <div class="nav-right">
+            <div  class="pointer" v-for="icon in navbarRight"><i :class="icon.icon"></i></div>
+            <div class="nav-right-input">
+              <input type="text" name="" value="" placeholder="Search">
+              <div><i class="fas fa-search"></i></div>
+            </div>
+
+          </div>
+        </nav>
+        <div class="header-bottom">
+          <div>Commence Business</div>
+          <h1>Distant Mentoring Program</h1>
+          <div class="pointer">Download free guidebook <i class="fas fa-long-arrow-alt-right"></i></div>
+        </div>
+      </header>
+      <main>
+        <!-- sezione 1 -->
+        <section class="sezione1">
+          <div class="sezione1-1">
+            <div>EVERYTHING IN MAXCOACH</div>
+            <div>Learn about our <span>Work Culture</span> at MaxCoach</div>
+            <p>Spend some time to visit our website or head office and discover
+            our current courses, enrollment procedure, and registration deadline.
+            We're opening new classes every beginning of each month.</p>
+            <div>Have a questions?<span class="pointer"> Get Free Guide <i class="fas fa-long-arrow-alt-right"></i></span></div>
+          </div>
+          <div class="sezione1-2">
+            <img class="img-absolute1" src="traccia/images/about-us-01-ohkia3qg98rq9vg3s0mn2hkflr1migdqdw370qnegc.jpg" alt="">
+            <img class="img-absolute2" src="traccia/images/maxcoach-shape-07.png" alt="">
+            <img class="img-absolute3" src="traccia/images/maxcoach-shape-02.png" alt="">
+            <img src="traccia/images/stock-full-hd-10-ohki1ayywq3cqutettrncduujpoaorifqu4relt2ts.jpg" alt="">
+            <i class="far fa-circle img-absolute4"></i>
+          </div>
+        </section>
+        <!-- / sezione 1 -->
+        <!-- sezione 2 -->
+        <section class="sezione2">
+          <div class="sezione2-box">
+            <div>129+</div>
+            <div>ENROLLED LEARNERS</div>
+          </div>
+          <div class="sezione2-box">
+            <div>80</div>
+            <div>FINISHED SESSION</div>
+          </div>
+          <div class="sezione2-box">
+            <div>4%</div>
+            <div>SATISFACTION RATE</div>
+          </div>
+        </section>
+        <!-- / sezione 2 -->
+        <!-- sezione 3 -->
+        <section class="sezione3">
+          <div class="sezione3-1">
+            <div>
+              <img class="img-1" src="traccia/images/stock-full-hd-11-670x450.jpg" alt="">
+              <img class="img-2" src="traccia/images/icon-youtube-play.png" alt="">
+              <img class="img-3" src="traccia/images/maxcoach-shape-05.png" alt="">
+              <img class="img-4" src="traccia/images/maxcoach-shape-07.png" alt="">
+
+            </div>
+          </div>
+          <div class="sezione3-2">
+            <div>HOW WE WORK</div>
+            <div>Upgrade your Skills <span>Upgrade your life</span></div>
+            <p>Opening up more opportunites in front of you to get the ticket to
+            more enjoiable door in life. Getting equipped with new skills for new
+            sets of insights into your career. MaxCoach accompany learners in
+            every stage of learning.</p>
+            <div class="pointer">Download free guidebook <i class="fas fa-long-arrow-alt-right"></i></span></div>
+          </div>
+        </section>
+        <!-- / sezione 3 -->
+        <!-- sezione 4 -->
+        <section class="sezione4">
+          <div class="sezione4-top">
+            <div>JOIN MAXCOACCH AT BEST</div>
+            <div>Latest Online <span>Courses</span></div>
+          </div>
+          <div class="sezione4-middle">
+            <div class="sezione4-middle-scheda">
+              <img src="traccia/images/course-02-480x298.jpg" alt="">
+              <div class="sezione4-middle-scheda-text">
+                <div>$40.<span>00</span></div>
+                <div>Brush Strokes Energize Trees in Paintings</div>
+                <div>
+                  <div><i class="fas fa-file-download"></i> <span>20 Lessons</span></div>
+                  <div><i class="far fa-user"></i> <span>50 Students</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="sezione4-middle-scheda">
+              <img src="traccia/images/stock-full-hd-03-480x298.jpg" alt="">
+              <div class="sezione4-middle-scheda-text">
+                <div>$0.<span>00</span></div>
+                <div>Customers-centric-Info-Tech Strategies</div>
+                <div>
+                  <div><i class="fas fa-file-download"></i> <span>24 Lessons</span></div>
+                  <div><i class="far fa-user"></i> <span>769 Students</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="sezione4-middle-scheda">
+              <img src="traccia/images/stock-full-hd-04-480x298.jpg" alt="">
+              <div class="sezione4-middle-scheda-text">
+                <div>$19.<span>00</span></div>
+                <div>Open Programming Courses for Everyone: Python</div>
+                <div>
+                  <div><i class="fas fa-file-download"></i> <span>17 Lessons</span></div>
+                  <div><i class="far fa-user"></i> <span>62 Students</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sezione4-bottom">
+            <div class="sezione4-bottom-pallini">
+              <div><i class="fas fa-circle"></i></div>
+              <div><i class="far fa-circle"></i></div>
+              <div><i class="far fa-circle"></i></div>
+              <div><i class="far fa-circle"></i></div>
+              <div><i class="far fa-circle"></i></div>
+            </div>
+            <div>Control your preference settings to get notified about<br>appropriate courses.<span class="pointer"> View all courses <i class="fas fa-long-arrow-alt-right"></i></span></div>
+          </div>
+        </section>
+        <!-- / sezione 4 -->
+        <!-- sezione 5 -->
+        <section class="sezione5">
+          <div class="sezione5-1">
+            <div>TESTIMONIALS</div>
+            <div>Why Do People <span>*Hearts*</span> Us?</div>
+            <p>Seeking for verbals of our service quality? Find them here.
+            Everything is transparent and straightforwoard for your sense
+            of justification.</p>
+            <div><span class="pointer"> View all <i class="fas fa-long-arrow-alt-right"></i></span></div>
+          </div>
+          <div class="sezione5-2">
+            <img src="traccia/images/homepages-mega-menu-image-alt.jpg" alt="">
+          </div>
+        </section>
+        <!-- / sezione 5 -->
+        <!-- sezione 6 -->
+        <section class="sezione6">
+          <div class="sezione6-1">
+            <img src="traccia/images/home-3-team-image.png" alt="">
+          </div>
+          <div class="sezione6-2">
+            <div>EVERITHING IN MAXCOACH</div>
+            <div>We're Here To <span>Transform</span> You!</div>
+            <p>s learners, people can enjoy great companionship from MaxCoach
+            mentors and educators. We can help you develop and grow at your best.</p>
+            <div class="pointer">Get Free Guide</div>
+          </div>
+        </section>
+        <!-- /sezione 6 -->
+        <!-- sezione 7 -->
+        <section class="sezione7">
+          <div class="sezione7-top">
+            <div>READ FOR MORE JOYMENT</div>
+            <div>Latest From <span>Our Blogs</span></div>
+          </div>
+          <div class="sezione7-bottom">
+            <div class="sezione7-bottom-scheda">
+              <img src="traccia/images/artist-blog-03-480x325.jpeg" alt="">
+              <div class="sezione7-bottom-scheda-text">
+                <div>ARTIST</div>
+                <div>Brush Strokes Energize Trees in Paintings</div>
+                <div>
+                  <div><i class="fas fa-file-download"></i> <span>May 15,2020</span></div>
+                  <div><i class="far fa-user"></i> <span>688 Views</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="sezione7-bottom-scheda">
+              <img src="traccia/images/artist-blog-01-480x325.jpg" alt="">
+              <div class="sezione7-bottom-scheda-text">
+                <div>ARTIST</div>
+                <div>Pocket-Sized Notebooks Hold Miniature Paintings</div>
+                <div>
+                  <div><i class="fas fa-file-download"></i> <span>May 15,2020</span></div>
+                  <div><i class="far fa-user"></i> <span>603 Views</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="sezione7-bottom-scheda">
+              <img src="traccia/images/artist-blog-02-480x325.jpg" alt="">
+              <div class="sezione7-bottom-scheda-text">
+                <div>ARTIST</div>
+                <div>Connection Between Self-Portaits and Identity</div>
+                <div>
+                  <div><i class="fas fa-file-download"></i> <span>May 15,2020</span></div>
+                  <div><i class="far fa-user"></i> <span>397 Views</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- / sezione 7 -->
+        <!-- sezione 8 -->
+        <section class="sezione8">
+          <div>Subscribe <span>Newsletters</span></div>
+          <p>Enter your email address to register our newsletter subscription<br>
+           delivered on a regular basis!</p>
+           <div class="sezione8-form">
+            <input type="text" name="" value="" placeholder="Enter your email">
+            <div class="pointer">Subscribe</div>
+           </div>
+        </section>
+        <!-- /sezione 8 -->
+      </main>
+      <footer class="footer">
+
+          <div v-for="(item, index) in footer" :class="addClass(index, footer)">
+            <div class="footer-title">{{item.title}}</div>
+            <div class="pointer" v-for="el in item.text">{{el.testo}}</div>
+            <div v-if="index === 0" class="icone">
+              <div v-for="icon in footerIcon">
+                <i class="pointer" :class="icon.icona"></i>
+              </div>
+            </div>
+          </div>
+
+
+
+      </footer>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
